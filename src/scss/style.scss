@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,500,700,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800&display=swap');
+
+
+@import 'modules/_vars';
+@import 'modules/_clearfix';
+@import 'modules/_default';
+@import 'modules/mixin';
+
+
+// templates scss
+
+@import 'templates/_header';
+@import 'templates/_footer';
+@import 'templates/header2';
+@import 'templates/Button';
+@import 'templates/HomeBanner';
+@import 'templates/banner';
+@import 'templates/serviceBox';
+@import 'templates/LeftContentRightImage';
+@import 'templates/LeftImageRightContent';
+@import 'templates/ServicePriceBox';
+@import 'templates/AccordianWithForm';
+@import 'templates/form';
+@import 'templates/contactInfoBox';
+@import 'templates/ImageGallery';
+@import 'templates/innerBanner';
+@import 'templates/RightContentLeftImageOverlay';
+@import 'templates/OnlyContent';
+@import 'templates/FullWidthStripContent';
+
+//pages
+@import 'pages/seoExpertInCity';

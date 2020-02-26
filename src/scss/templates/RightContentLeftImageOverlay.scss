@@ -1,0 +1,76 @@
+.RightContentLeftImageOverlay{
+    position: relative;
+    @media(min-width: 1024px){
+        margin-bottom: 95px;
+    }
+    &.Section{
+        @media(min-width: 992px){
+            padding: 0;
+        }
+    }
+    &::before{
+        content: '';
+        background-color: $deepBlue;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        right: 0;
+        top: 0;
+        border-top-left-radius: 7px;
+        @media(min-width: 992px){
+            width: 65%;
+        }
+    }
+    .MobileReverseRow{
+        @media(max-width: 991px){
+            flex-direction: column-reverse;
+        }
+    }
+    .LeftSideContainer{
+        position: relative;
+        .LeftImageContainer{
+            position: relative;
+            width: fit-content;
+            border-radius: 7px;
+            box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.16);
+            @media(min-width: 992px){
+                top: 55px;
+                right: -55px;
+            }
+            img{
+                border-radius: 7px;
+                display: block;
+            }
+        }
+    }
+    .RightTextContainer{
+        color: $white;
+        @media(min-width: 992px){
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            padding-left: 50px;
+        }
+        .TexInner{
+            h2{
+                font-weight: 500;
+                font-size: 26px;
+                padding-bottom: 10px;
+                @media(min-width: 992px){
+                    width: 90%;
+                }
+            }
+            p{
+                font-family: $secondaryFont;
+                font-size: 14px;
+                font-weight: 400;
+            }
+        }
+    }
+}
+
+.MobileReverseRow{
+    @media(max-width: 767px){
+        flex-direction: column-reverse;
+    }
+}

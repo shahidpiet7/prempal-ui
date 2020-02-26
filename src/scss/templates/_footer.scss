@@ -1,0 +1,51 @@
+footer{
+    padding: 3rem 0 0;
+    background-color: $deepBlue;
+    color: $white;
+    position: relative;
+    .FooterContainer{
+        .FooterLogo{
+            max-width: 120px;
+        }
+        h4{
+            font-weight: 400;
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+        ul{
+            li{
+                font-family: $secondaryFont;
+                font-weight: 300;
+                font-size: 0.9rem;
+                padding: 0 0 0.4rem;
+            }
+        }
+        a{
+            color: $white;
+            opacity: 0.6;
+            transition: all 0.25s ease-in;
+            &:hover{
+                opacity: 1;
+            }
+        }
+        .icon{
+            fill: $white;
+            width: 16px;
+            height: 16px;
+            margin-right: 10px;
+        }
+    }
+    
+    .footerBottomSec{
+        background-color: darken($deepBlue, 15%);
+        margin-top: 2rem;
+        .copyright{
+            font-weight: 300;
+            font-size: 0.75rem;
+            font-family: $secondaryFont;
+            letter-spacing: 0.05rem;
+            padding: 0.8rem 0;
+            margin-bottom: 0;
+        }
+    }
+}

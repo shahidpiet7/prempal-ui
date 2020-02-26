@@ -1,0 +1,21 @@
+@mixin borderRadius($radius){
+    border-radius: $radius;
+}
+
+@mixin overlayBackground(){
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+@mixin flexCenter(){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin Ease($time){
+    transition: all $time ease-in;
+}

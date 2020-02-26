@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    // font-family: $primary-font;
+    color: $primary-color;
+    // font-size: 1rem;
+    font: 400 16px/1.4 $primaryFont;
+    overflow-x: hidden;
+    background-color: $white;
+    h1,h2,h3,h4,h5,h6{
+        margin-block-end: 0;
+    }
+    a{
+       text-decoration: none;
+       color: $lightBlue;
+    }
+    ul{
+        list-style: none;
+        li{
+            list-style: none;
+        }
+    }
+}
+
+h1{
+    font-family: $secondaryFont;
+    font-size: 3rem;
+}
+
+h2{
+    font-family: $secondaryFont;
+    font-size: 2rem;
+}
+
+h4{
+    font-size: 1.5rem;
+}
+p{
+    line-height: 1.6;
+}
+
+img{
+    max-width: 100%;
+  }
+
+.Section{
+    padding: 35px 0;
+    @media(min-width: 768px){
+        padding: 50px 0;
+    }
+}
+
+.m-auto{
+    margin: auto;
+}
+
+.TextCenter{
+    text-align: center;
+}
+.Link{
+    text-decoration: underline !important;
+}
+.MTop3{
+    margin-top: 3rem;
+}
+
+.MTop2{
+    margin-top: 2rem;
+}
+
+.MTop1{
+    margin-top: 1rem;
+}
+
+.MBottom3{
+    margin-bottom: 3rem;
+}
+.MBottom2{
+    margin-bottom: 2rem;
+}
+.MTop7{
+    margin-top: 7rem;
+}
+
+.MBottom25{
+    margin-bottom: 25px;
+}
+
+.dFlex{
+    display: flex !important;
+}
+
+.PinkSvg{
+    fill: $pink;
+}
+
+.PinkText{
+    color: $pink;
+}
+
+.RedText{
+    color: $red;
+}
+
+.smallIcon{
+    width: 22px;
+}
+
+.GrayBg{
+    background-color: $backgroundcolor;
+}
+
+.SectionBottomLine{
+    border-bottom: 1px solid $lightGray;
+}
+
+

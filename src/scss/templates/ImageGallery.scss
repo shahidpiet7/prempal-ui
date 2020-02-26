@@ -1,0 +1,55 @@
+.ImageGallerySection{
+    background: linear-gradient(90deg, #1A237E 0, #3D5AFE 100%);
+    position: relative;
+    &:before{
+        content: '';
+        background-image: url(../images/search-engine-optimization.png);
+        background-position: right bottom;
+        width: 100%;
+        height: 100px;
+        background-size: contain;
+        position: absolute;
+        bottom: 0;
+        opacity: 0.2;
+    }
+    .CenterHead{
+        color: $white;
+        padding-bottom: 3rem;
+        h2{
+            color: $white;
+        }
+        h4{
+            color: $white;
+        }
+    }
+    .GalleryContainer{
+        display: inline-block;
+        border-radius: 10px;
+        border: 1px solid #9c94c8;
+        color: $deepBlue;
+        background-color: $white;
+        box-shadow: 4px 4px 1px rgba(223, 226, 255, 0.08);
+        transition: all 0.25s ease-in;
+        &:hover{
+            border-color: $white;
+            box-shadow: 6px 6px 1px rgba(223, 226, 255, 0.18);
+        }
+        .GalleryImgWrap{
+            img{
+                border-radius: 10px 10px 0 0;
+                display: block;
+
+            }
+        }
+        .GalleryInnertext{
+            padding: 0.4rem;
+            h3{
+                font-family: $secondaryFont;
+                font-weight: 600;
+                font-size: 1rem;
+                text-align: center;
+                
+            }
+        }
+    }
+}

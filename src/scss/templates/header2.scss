@@ -1,0 +1,59 @@
+#header{
+    .MenuContainer{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .NavContainer{
+        nav{
+            a{
+                color: $deepBlue;
+                font-weight: 500;
+                &.PrimaryButton{
+                    padding: 0.4rem 1.4rem;
+                    &:hover{
+                        color: $white;
+                    }
+                }
+            }
+            >ul{
+                display: flex;
+                font-family: $secondaryFont;
+                >li{
+                    padding: 15px 35px 15px 0;
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    z-index: 5;
+                    &:first-child{
+                        padding-left: 0;
+                    }
+                    &:last-child{
+                        padding-right: 0;
+                    }
+                    a{
+                        font-size: 15px;
+                    }
+                }
+                .haveSubmenu{
+                    >ul{
+                        padding: 0;
+                        position: absolute;
+                        top: 100%;
+                        min-width: 235px;
+                        background-color: $white;
+                        box-shadow: 0 9px 20px rgba(0,0,0,0.11);
+                        transform: scaleY(0.5) translateY(-80%);
+                        visibility: hidden;
+                        opacity: 0;
+                        z-index: -4;
+                        transition: all .35s ease;
+                    }
+                }
+            }
+        }
+    }
+    .MobileNavController{
+        display: none;
+    }
+}

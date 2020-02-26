@@ -1,0 +1,38 @@
+.LeftContentRightImageSection{
+    .LeftContentContainer{
+        .ContentHead{
+            margin-bottom: 1.4rem;
+            h2{
+                font-weight: 400;
+                color: $deepBlue;
+                letter-spacing: 0.015rem;
+                margin-bottom: 0.5rem;
+            }
+            h4{
+                font-size: 1.1rem;
+                font-weight: 500;
+                color: $deepBlue;
+                font-family: $secondaryFont;
+            }
+        }
+        p{
+            color: $deepBlue;
+            font-size: 1.1rem;
+        }
+        .ListUl{
+            margin: 1rem 0;
+            >li{
+                background: url(../images/checkbox.svg)no-repeat left top;
+                background-size: 17px 17px;
+                padding-left: 35px;
+                padding-bottom: 0.8rem;
+                line-height: 1.4;
+                font-size: 15px;
+                color: $deepBlue;
+            }
+        }
+        .ButtonWrap{
+            margin-top: 2rem;
+        }
+    }
+}

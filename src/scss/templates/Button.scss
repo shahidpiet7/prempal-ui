@@ -1,0 +1,167 @@
+.RoundButton{
+    padding: 0.65rem 1.5rem !important;
+    border-radius: 150px;
+    font-size: 1.02rem !important;
+    display: inline !important;
+    border: 1px solid #bbb;
+    background-color: $white;
+    box-shadow: 0px 5px 18px rgba(0, 0, 0, 0.1);
+    @include Ease(0.25s);
+    &:hover{
+        box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+    }
+}
+
+.OrangeGradientBtn{
+    border-color: #FF9611;
+    background: linear-gradient(-45deg, #FC4736 0, #FF9611 100%);
+    color: $white !important;
+    box-shadow: 0px 4px 13px rgba(224, 61, 25, 0.35);
+    @include Ease(0.25s);
+    // &:hover{
+    //     // background: linear-gradient(-45deg, #ef3321 0, #ffb557 100%);
+    // }
+}
+
+.PurpleGradientBtn{
+    border-color: #BD45F5;
+    background: linear-gradient(-45deg, #d170ff 0, #794eea 100%);
+    color: $white !important;
+    box-shadow: 0px 4px 16px rgba(63, 16, 159, 0.22);
+    @include Ease(0.25s);
+    &:hover{
+        background: linear-gradient(-45deg, #8A63F2 0, #BD45F5 100%);
+    }
+}
+
+.PrimaryButton{
+    border: 1px solid $deepBlue;
+    color: $deepBlue;
+    border-radius: 10px;
+    padding: 0.65rem 1.8rem;
+    font-family: $secondaryFont;
+    font-size: 0.95rem;
+    outline: none;
+    cursor: pointer;
+    @include Ease(0.25s);
+    &:hover{
+        background-color: $deepBlue;
+        border-color: $deepBlue;
+        color: $white;
+        &.ButtonArrow{
+            .icon{
+                fill: $white;
+            }
+        }
+    }
+    &:focus{
+        outline: none;
+    }
+    &:active{
+        outline: none;
+    }
+    &.ButtonArrow{
+        display: flex;
+        align-items: center;
+        width: fit-content;
+        margin: 0 auto;
+        &:hover{
+            .icon{
+                transform: translateX(5px);
+            }
+        }
+        .icon{
+            width: 20px;
+            height: 20px;
+            fill: $deepBlue;
+            margin-left: 10px;
+            position: relative;
+            @include Ease(0.25s);
+        }
+    }
+    &.LightBlueButton{
+        background-color: $lightBlue;
+        border: 1px solid $lightBlue;
+        color: $white;
+        &:hover{
+            background-color: $deepBlue;
+            border-color: $deepBlue;
+        }
+    }
+    &.LightBlueBorderBtn{
+        background-color: transparent;
+        color: $lightBlue;
+        font-weight: 500;
+        border: 2px solid $lightBlue;
+        &:hover{
+            background-color: $lightBlue;
+            color: $white;
+            border-color: $lightBlue;
+        }
+    }
+    &.GreenButton{
+        background-color: $lightGreen;
+        color: $white;
+        border: 2px solid $deepBlue;
+        &.ButtonArrow{
+            .icon{
+                fill: $white;
+            }
+        }
+    }
+    &.YellowButton{
+        background-color: $deepYellow;
+        color: $deepBlue;
+        border: 2px solid $white;
+        font-weight: 500;
+        &.ButtonArrow{
+            .icon{
+                fill: $deepBlue;
+            }
+        }
+        &.BtnShadow{
+            box-shadow: 4px 5px 0px rgb(26, 35, 126);
+            &:hover{
+                box-shadow: unset;
+            }
+        }
+    }
+    &.mediumBtn{
+        padding: 0.53rem 1.35rem;
+    }
+}
+
+.greenLink{
+    color: $lightGreen;
+    font-family: $secondaryFont;
+}
+.LinkButton{
+    color: $lightBlue;
+    transition: all 0.25s ease-in;
+    font-size: 16px;
+    text-decoration: underline;
+    display: inline-block;
+    // font-weight: 500;
+    &:hover{
+        // border-bottom: 1px solid $lightBlue;
+        >span{
+            margin-left: 3px;
+        }
+    }
+    >span{
+        display: inline-block;
+        width: 6px;
+        height: 6px;
+        border-top: 1px solid $lightBlue;
+        border-right: 1px solid $lightBlue;
+        transform: rotate(45deg);
+        text-decoration: none !important;
+        vertical-align: middle;
+        transition: all 0.3s ease;
+    }
+}
+
+.BtnWrap{
+    padding-top: 20px;
+}
+

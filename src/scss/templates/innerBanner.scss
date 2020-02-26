@@ -1,0 +1,41 @@
+.innerBanner{
+    background-color: #0000B2;
+    min-height: 250px;
+    position: relative;
+    .innerBannerContainer{
+        width: 100%;
+        position: absolute;
+        bottom: 30px;
+    }
+    .InnerBannerTextWrap{
+        h1{
+            color: $white;
+            font-size: 35px;
+            font-weight: 400;
+            letter-spacing: 0.05rem;
+        }
+        #breadcrumbs{
+            color: $white;
+            font-size: 14px;
+            a{
+                color: $lightYellow;
+                @include Ease(0.25s);
+                &:hover{
+                    color: $pink;
+                }
+            }
+        }
+    }
+    .imageWrap{
+        max-width: 360px;
+        margin: 0 auto;
+        text-align: center;
+        position: relative;
+        img{
+            width: 100%;
+            position: absolute;
+            top: 7px;
+            left: 0;
+        }
+    }
+}

@@ -1,0 +1,17 @@
+.FullWidthStripContentSection{
+    background-color: $deepBlue;
+    color: $white;
+    .TopHeading{
+        h2{
+            color: $white;
+        }
+    }
+    .Notes{
+        background-color: darken($deepBlue, 10%);
+        padding: 10px;
+        margin-top: 15px;
+        font-size: 15px;
+        font-weight: 400;
+        font-family: $secondaryFont;
+    }
+}
